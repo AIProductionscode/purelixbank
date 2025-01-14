@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Purelix Bank | Invest</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <!--Title Icon-->
+  <link rel="shortcut icon" href="Template-assets/titleicon.png" type="image/x-icon">
+  <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <nav class="navbar navbar-expand-sm" aria-label="Third navbar example" id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand px-3" href="#"><img src="Template-assets/logofull.png" alt="Pureflix Bank"
+          class="brand-logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+        aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarsExample03">
+        <ul class="navbar-nav px-2">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="invest.html" data-bs-toggle="dropdown"
+              aria-expanded="false">Invest</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="invest.html#shareholder">Shareholder</a></li>
+              <li><a class="dropdown-item" href="invest.html#cryptocurrency">Cryptocurrency</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="loans.html">Loans</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="About us.html" data-bs-toggle="dropdown"
+              aria-expanded="false">About Us </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about us.html#banking">Banking</a></li>
+              <li><a class="dropdown-item" href="about us.html#financial-growth">Financial Growth</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="customer service.html">Customer Service</a>
+          </li>
+          <li class="sign-up">
+            <button class="btn btn-account" onclick="openAccount()">Open An Account</button>
+          </li>
+        </ul>
+      </div><!--Nav item-->
+    </div><!--container fluid-->
+  </nav>
+  <!--Content-->
+  <!--Hero-->
+  <div class="px-4 pt-3 py-2 text-center">
+    <h1 class="display-4 hero-title">Invest in your future.</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4 hero-paragraph">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+        world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+        extensive prebuilt components, and powerful JavaScript plugins.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-4">
+        <button type="button" class="btn btn-invest px-4 me-md-2">Start now</button>
+      </div>
+      <div class="overflow-hidden" style="max-height: 44vh;">
+        <div class="container px-5">
+          <img src="Template-assets/investmentimgtop.png" class="img-fluid mb-4 invimg-top " alt="Invest"
+            loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container col-xxl-8 px-4 py-5 invest">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-3">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="Template-assets/investmentimg1.png" class="d-block mx-lg-auto img-fluid" alt="Investment"
+          loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 lh-1 mb-3 hero-title">Become a<br>Shareholder</h1>
+        <p class="lead hero-paragraph">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+          world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid
+          system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-invest px-4 me-md-2">Invest</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container col-xxl-8 px-4 py-5 invest" id="cryptocurrency">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-3">
+      <div class="col-lg-6">
+        <h1 class="display-5 lh-1 mb-3 hero-title">Invest in<br>Cryptocurrency</h1>
+        <p class="lead hero-paragraph">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+          world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid
+          system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-invest px-4 me-md-2">Invest</button>
+        </div><!--btn-->
+      </div><!--col-->
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="Template-assets/investmentimg2.png" class="d-block mx-lg-auto img-fluid" alt="Investment"
+          loading="lazy">
+      </div><!--col-->
+    </div><!--row-->
+  </div><!--Container-->
+
+  <!--Why you should invest -->
+  <div class="px-4 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold">Why you should invest?</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button type="button" class="btn btn-invest px-4 me-md-2">Start now</button>
+      </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 60vh;">
+      <div class="container px-5">
+        <img src="Template-assets/invest last.png" class="img-fluid" alt="Image" width="400" height="200" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--Back to top-->
+  <div class="container py-1">
+    <div class="col-12 text-center">
+      <a href="#nav">
+        <button type="button" class="btn btn-purelix">&uarr;</button>
+    </a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

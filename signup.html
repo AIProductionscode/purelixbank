@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in to your Account</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <!--Title Icon-->
+    <link rel="shortcut icon" href="Template-assets/titleicon.png" type="image/x-icon">
+    <style>
+        body {
+            color: black;
+            display: flex;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-image: url(Template-assets/signbg.jpg);
+        }
+
+        .form-signin {
+            max-width: 330px;
+            padding: 15px;
+        }
+
+        .form-signin .form-floating:focus-within {
+            z-index: 2;
+        }
+
+        .form-signin input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .logo {
+            height: 80px;
+        }
+
+        .btn-signin {
+            color: white;
+            transition: ease-in-out 0.3s;
+            border: 2px solid;
+            border-image: linear-gradient(45deg, #b70000, #ff4800, #ff5a00, #ff9600, #ffcc00) 1;
+        }
+
+        .btn-signin:hover {
+            color: white;
+            background-image: linear-gradient(45deg, #b70000, #ff4800, #ff5a00, #ff9600, #ffcc00);
+        }
+
+        .btn-signin:active {
+            border-image: linear-gradient(45deg, #b70000af, #ff4800af, #ff5a00af, #ff9600af, #ffcc00af) 1;
+            background-image: linear-gradient(45deg, #b70000af, #ff4800af, #ff5a00af, #ff9600af, #ffcc00af);
+        }
+
+        input[type="checkbox"] {
+            accent-color: #ff4800;
+        }
+
+        input:focus{
+            color: white !important;
+            background-image: linear-gradient(45deg, #b70000, #ff4800, #ff5a00, #ff9600, #ffcc00);
+        }
+        
+    </style>
+    <script>
+        function next() {
+            var firstname = document.getElementById("firstname").value;
+            var lastname = document.getElementById("lastname").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var confirmpassword = document.getElementById("confirmpassword").value;
+
+            if (firstname == "") {
+                alert("Input Firstname")
+                return false;
+            }
+
+            if (lastname == "")
+             {
+                alert("Input Lastname")
+                return false;
+             }
+
+            if (email == "") {
+                alert("Input email");
+                return false;
+            }
+
+            if (email.indexOf("@") <= 0) {
+                document.getElementById("email").innerHTML = "Invalid Email (input @ missing)";
+                return false;
+            }
+
+            if (password == "")
+            {
+                alert("Input password");
+                return false;
+            }
+
+            if (confirmpassword == "")
+            {
+                alert("Confirm password");
+                return false;
+            }
+
+            if (password != confirmpassword) {
+                alert("Passwords don't match")
+            }
+
+            if (firstname!="" && lastname !="" && email != "" && email.indexOf("@") != 0
+            && password != "" && confirmpassword != "" && password == confirmpassword ) {
+                window.location.href = "signupfinish.html"; 
+                alert("Click \"ok\" to confirm all details are correct")
+                }
+            }
+    </script>
+</head>
+
+<body class="text-center">
+    <div class="col-6"></div>
+    <main class="form-signin w-100 m-auto col-6">
+
+        <form class="">
+            <img class="mb-4 logo" src="Template-assets/Logo Primary.png" alt="Pureflix Bank">
+            <h1 class="h3 mb-3" style="font-family: futura hv bt;">Create your account</h1>
+
+            <div class="form-floating">
+                <select name="Account Type" id="Account Type" class="form-control my-1">
+                    <option value="Wallet Account">Wallet Account</option>
+                    <option value="Savings Account">Savings Account</option>
+                    <option value="Current Account">Current Account</option>
+                </select>
+                <label for="floatingInput" style="font-family: futura lt bt;">Select Account Type</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="text" class="form-control my-1" id="firstname" placeholder="name@example.com">
+                <label for="floatingInput" style="font-family: futura lt bt;">Firstname</label>
+            </div>
+            
+            <div class="form-floating">
+                <input type="text" class="form-control my-1" id="lastname" placeholder="name@example.com">
+                <label for="floatingInput" style="font-family: futura lt bt;">Lastname</label>
+            </div>
+            
+            <div class="form-floating">
+                <input type="email" class="form-control my-1" id="email" placeholder="name@example.com">
+                <label for="floatingInput" style="font-family: futura lt bt;">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control my-1" id="password" placeholder="Password">
+                <label for="floatingPassword" style="font-family: futura lt bt;">Password</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm Password">
+                <label for="floatingPassword" style="font-family: futura lt bt;">Confirm Password</label>
+            </div>
+            
+         
+
+            <button class="w-100 btn btn-lg btn-signin" type="submit" onclick="next()">Next &rarr; </button>
+        </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

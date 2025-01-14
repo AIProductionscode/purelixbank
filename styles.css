@@ -1,0 +1,236 @@
+/*Home page*/
+/*Body*/
+.body {
+height: 670px;
+ background-image: url(Template-assets/webbg.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+} 
+#home-content {
+background-image: url(Template-assets/invbg.png);
+}
+
+/*Brand Logo*/
+.brand-logo {
+    height: 40px;
+}
+
+/*Navbar*/
+.navbar {
+    font-family: azonix;
+    background-color: rgba(255, 255, 255, 0.900);
+}
+
+/*Nav Links*/
+a.nav-link {
+    color: black;
+    transition: ease-in-out 0.2s;
+    -webkit-transition: ease-in-out 0.2s;
+}
+
+a.nav-link:hover {
+    background: -webkit-linear-gradient( 45deg, #b70000, #ff4800, #ff5a00, #ff9600, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+a.active {
+    background: -webkit-linear-gradient( 45deg, #b70000, #ff4800, #ff5a00, #ff9600, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+a.nav-link:active {
+    background: -webkit-linear-gradient(45deg, #b70000af, #ff4800af, #ff5a00af, #ff9600af, #ffcc00af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+button.active {
+    background: -webkit-linear-gradient( 45deg, #b70000, #ff4800, #ff5a00, #ff9600, #ffcc00);
+}
+
+
+
+/*Nav Dropdown Menus*/
+.dropdown-menu {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.900);
+}
+a.dropdown-item:hover {
+    background: -webkit-linear-gradient( 45deg, #b70000, #ff4800, #ff5a00, #ff9600, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+a.dropdown-item:active {
+    background: -webkit-linear-gradient(45deg, #b70000af, #ff4800af, #ff5a00af, #ff9600af, #ffcc00af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+/*Carousels*/
+.c1 {
+    color: white;
+    background-image: url(Template-assets/car\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
+.c2 {
+    color: white;
+    background-image: url(Template-assets/car\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
+.c3 {
+    color: white;
+    background-image: url(Template-assets/car\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
+.c4 {
+    color: white;
+    background-image: url(Template-assets/car\ 3.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
+.c5 {
+    color: white;
+    background-image: url(Template-assets/car\ 4.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
+.c6 {
+    color: white;
+    background-image: url(Template-assets/car\ 5.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
+/*Hero title*/
+.hero-title {
+    font-family: futura hv bt;
+}
+/*Hero paragraph*/
+.hero-paragraph {
+    font-family: futura lt bt;
+}
+
+/*Custom Pureflix button*/
+.btn-purelix {
+    font-family: futura lt bt;
+    font-size:larger;
+    color: black;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #b70000, #ff4800, #ff5a00, #ff9600, #ffcc00) 1;
+    transition: ease-in-out 0.2s;
+}
+
+.btn-purelix:hover {
+    color: white;
+    background-image:  linear-gradient(45deg, #b70000, #ff4800, #ff5a00, #ff9600, #ffcc00);
+}
+
+.btn-purelix:active {
+    color: white !important;
+    border-image: linear-gradient(45deg, #b70000af, #ff4800af, #ff5a00af, #ff9600af, #ffcc00af) 1;
+    background-image:  linear-gradient(45deg, #b70000af, #ff4800af, #ff5a00af, #ff9600af, #ffcc00af);
+}
+/*Home section continuation*/
+.hero-subtitle {
+    font-family: futura md bt medium;
+}
+
+.feature-image {
+    height: 250px;
+    opacity: 80%;
+    transition: ease-in-out 0.2s;
+    overflow: hidden;
+}
+.feature-image:hover {
+    transform: scale(1.04);
+    opacity: 100%;
+}
+
+/*Invest Page*/
+/*Body*/
+#content {
+    background-image: url(Template-assets/invbg.png);
+}
+.invest {
+    color: black;
+}
+/*Hero 1*/
+.invimg-top {
+    height: 450px;
+}
+/*Hero Button*/ 
+.btn-invest {
+    font-family: futura lt bt;
+    font-size: larger;
+    color: black;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #b70000, #ff4800, #ff5a00, #ff9600, #ffcc00) 1;
+    transition: ease-in-out 0.2s;
+}
+
+.btn-invest:hover {
+    color: white;
+    background-image:  linear-gradient(45deg, #b70000, #ff4800, #ff5a00, #ff9600, #ffcc00);
+}
+
+.btn-invest:active {
+    color: white !important;
+    border-image: linear-gradient(45deg, #b70000af, #ff4800af, #ff5a00af, #ff9600af, #ffcc00af) 1;
+    background-image:  linear-gradient(45deg, #b70000af, #ff4800af, #ff5a00af, #ff9600af, #ffcc00af);
+}
+
+/*Loans Page*/
+/*Head image*/
+
+.loan-img {
+    width: 100%;
+}
+
+.loan-head {
+    color: white;
+    background-image: url(Template-assets/car\ 1.png);
+    background-repeat: no-repeat;
+}
+
+.loan-subtitle {
+    font-family: azonix;
+    font-size: 25px;
+    background: -webkit-linear-gradient( 45deg, #b70000, #ff4800, #ff5a00, #ff9600, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.loan-body {
+    background-image: url(Template-assets/loans.png);
+    background-repeat: no-repeat;
+}
+
+/*Customer Service*/
+.customer-service-img {
+    height: 120px;
+}
+
+.footer-list {
+     background-image: linear-gradient(45deg, #b70000, #ff4800, #ff5a00, #ff9600, #ffcc00);
+}
+
+.contact {
+    color: white;
+}
+
+.contact-icon {
+    color: white;
+}
+
+/*Copyright*/
+.copyright:hover {
+    color:white
+}
